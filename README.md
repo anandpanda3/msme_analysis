@@ -20,26 +20,26 @@ Here's the complete content formatted for you to copy and paste directly into yo
 
 ## Overview
 
-This project is an advanced **Retrieval-Augmented Generation (RAG)** based application that leverages **Large Language Models (LLM)** for enhancing data on Micro, Small, and Medium Enterprises (MSMEs) across India. Given a government-provided dataset with limited details (state, district, ID, and total MSME count), we enrich it with additional attributes such as **dominant languages** and **types of MSMEs** using LLM-based data filling techniques.
+This project is an advanced Retrieval-Augmented Generation (RAG) based application that leverages Large Language Models (LLM) for enhancing data on Micro, Small, and Medium Enterprises (MSMEs) across India. Given a government-provided dataset with limited details (state, district, ID, and total MSME count), we enrich it with additional attributes such as dominant languages and types of MSMEs using LLM-based data filling techniques.
 
 We employ **hybrid vector search mechanisms** that combine **FAISS (Facebook AI Similarity Search)** and **BM25 indexing**, coupled with re-ranking algorithms to retrieve the most relevant embeddings. This enables customized, region-specific, and language-sensitive querying capabilities, tailored to the MSME sector in various states.
 
 ## Features
 
-- **LLM-based Data Enrichment**: Automatically fills in missing details like dominant languages and MSME types.
-- **Embeddings Storage**: Uses **Qdrant Cloud** to store generated embeddings for efficient retrieval.
-- **Hybrid Search Mechanism**: Combines FAISS and BM25 indexing for enhanced vector search and retrieval.
-- **Custom RAG Application**: Region and sector-specific MSME insights using natural language queries.
-- **Multilingual Support**: Answer queries based on regional language preferences and MSME sector details.
+- LLM-based Data Enrichment: Automatically fills in missing details like dominant languages and MSME types.
+- Embeddings Storage: Uses **Qdrant Cloud** to store generated embeddings for efficient retrieval.
+- Hybrid Search Mechanism: Combines FAISS and BM25 indexing for enhanced vector search and retrieval.
+- Custom RAG Application: Region and sector-specific MSME insights using natural language queries.
+- Multilingual Support: Answer queries based on regional language preferences and MSME sector details.
 
 ## Tech Stack
 
-- **Python**
-- **Qdrant Cloud** (for embedding storage)
-- **FAISS** (Facebook AI Similarity Search)
-- **BM25** (for traditional keyword-based search)
-- **Large Language Models (LLM)** (e.g., OpenAI's GPT-based models)
-- **Retrieval-Augmented Generation (RAG)** Framework
+- Python
+- Qdrant Cloud (for embedding storage)
+- FAISS (Facebook AI Similarity Search)
+- BM25 (for traditional keyword-based search)
+- Large Language Models (LLM) (e.g., OpenAI's GPT-based models)
+- Retrieval-Augmented Generation (RAG) Framework
 
 ## Dataset Description
 
@@ -55,7 +55,7 @@ Using LLM-based data augmentation, the dataset was enriched with:
 - `dominant_languages` (e.g., Hindi, Tamil, Bengali, etc.)
 - `msme_type` (e.g., manufacturing, services, etc.)
 
-The augmented dataset was then converted into embeddings using LLM and stored in **Qdrant Cloud**.
+The augmented dataset was then converted into embeddings using LLM and stored in Qdrant Cloud.
 
 ## Architecture
 
