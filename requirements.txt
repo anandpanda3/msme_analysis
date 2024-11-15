@@ -1,0 +1,14 @@
+streamlit
+python-dotenv
+numpy
+pandas
+qdrant-client
+groq
+sentence-transformers
+torch
+rank-bm25
+tqdm
+transformers
+tenacity
+aiohttp
+asyncio
